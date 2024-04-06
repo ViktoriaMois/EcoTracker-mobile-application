@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/basic_background">
+
+    <LinearLayout
+        android:layout_above="@id/toolbar"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/CustomHeadline"
+            android:id="@+id/textView4"
+            android:text="@string/settings"/>
+
+        <RelativeLayout
+            android:id="@+id/Rel1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_marginTop="50dp"
+                android:id="@+id/ChangeAvatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/profile_icon"
+                android:backgroundTint="@color/light_grey"
+                android:layout_alignStart="@id/textView2"
+                android:layout_alignEnd="@id/changeUsername"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/username"
+                android:textColor="@color/text_grey"
+                android:layout_below="@id/ChangeAvatar"/>
+
+            <ImageButton
+                android:id="@+id/changeUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ChangeAvatar"
+                android:layout_marginTop="9dp"
+                android:layout_toEndOf="@id/textView2"
+                android:backgroundTint="@color/transparent"
+                android:src="@drawable/chat_button"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="80dp"
+            android:id="@+id/buttonPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/privat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|center_horizontal"
+                android:background="@color/transparent_turquoise"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    style="@style/ButtonListStyle"
+                    android:id="@+id/userPrivate"
+                    android:text="@string/userprivate"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/arrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notific"
+                android:layout_below="@+id/privat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|center_horizontal"
+                android:background="@color/transparent_turquoise"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    style="@style/ButtonListStyle"
+                    android:id="@+id/userNotifications"
+                    android:text="@string/notifications"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/arrow"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/supp"
+                android:layout_below="@+id/notific"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|center_horizontal"
+                android:background="@color/transparent_turquoise"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    style="@style/ButtonListStyle"
+                    android:id="@+id/support"
+                    android:text="@string/support"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/arrow"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_light_grey"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/main_btn"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/calendar"
+                android:backgroundTint="@color/transparent_turquoise"
+                android:src="@drawable/calendar_month_outline"/>
+
+            <ImageButton
+                style="@style/ButtonToolbar"
+                android:id="@+id/profile_btn"
+                android:src="@drawable/account"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

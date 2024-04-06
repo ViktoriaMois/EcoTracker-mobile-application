@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent_turquoise">#854BD8CF</color>
+    <color name="transparent_turquoise2">#5000EFE0</color>
+    <color name="turquoise">#4BD8CF</color>
+    <color name="pink">#FFB6B6</color>
+    <color name="transparent_pink">#85FFB6B6</color>
+    <color name="transparent_orange">#60FF5722</color>
+    <color name="text_orange">#882607</color>
+    <color name="light_grey">#EDEDED</color>
+    <color name="text_grey">#747474</color>
+    <color name="dark_turquoise">#00605A</color>
+    <color name="transparent_green">#60CDDC39</color>
+    <color name="text_green">#526800</color>
+    <color name="transparent_yellow">#60FFC107</color>
+    <color name="text_yellow">#9A6600</color>
+    <color name="text_pink">#530000</color>
+    <color name="transparent_light_grey">#90FFFFFF</color>
+    <color name="transparent">#00000000</color>
+</resources>

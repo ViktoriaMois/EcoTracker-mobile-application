@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Items">
+        <item>Bottle 0,5</item>
+        <item>Bottle 1,0</item>
+        <item>Bottle 1,5</item>
+        <item>Bottle 2,0</item>
+        <item>Container</item>
+        <item>Jar 1,0</item>
+        <item>Jar 3,0</item>
+        <item>Jar 5,0</item>
+        <item>Journal</item>
+        <item>Newspaper</item>
+        <item>Box</item>
+        <item>Can</item>
+    </string-array>
+</resources>

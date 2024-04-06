@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/basic_background">
+
+    <LinearLayout
+        android:layout_above="@id/toolbar"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/CustomHeadline"
+            android:id="@+id/textView4"
+            android:text="@string/profile"/>
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@mipmap/profile_icon"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@color/text_grey" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/experience"
+            android:textColor="@color/text_grey" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/buttonPanel"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/awards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@color/transparent_turquoise">
+
+                    <Button
+                        style="@style/ButtonListStyle"
+                        android:id="@+id/userAwards"
+                        android:text="@string/awards"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fractions"
+                    android:layout_below="@+id/awards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@color/transparent_turquoise"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        style="@style/ButtonListStyle"
+                        android:id="@+id/userFractions"
+                        android:text="@string/fractions"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/friends"
+                    android:layout_below="@+id/fractions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@color/transparent_turquoise"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        style="@style/ButtonListStyle"
+                        android:id="@+id/userFriends"
+                        android:text="@string/friends"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settings"
+                    android:layout_below="@+id/friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@color/transparent_turquoise"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        style="@style/ButtonListStyle"
+                        android:id="@+id/userSettings"
+                        android:text="@string/settings">
+                    </Button>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow">
+                    </ImageView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ex"
+                    android:layout_below="@+id/settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center|center_horizontal"
+                    android:background="@color/transparent_pink"
+                    android:layout_marginTop="5dp">
+
+                    <Button
+                        style="@style/ButtonListStyle"
+                        android:textColor="@color/text_pink"
+                        android:id="@+id/exit"
+                        android:text="@string/exit">
+                    </Button>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/arrow_exit">
+                    </ImageView>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_light_grey"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/main_btn"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/calendar"
+                android:backgroundTint="@color/transparent_turquoise"
+                android:src="@drawable/calendar_month_outline"/>
+
+            <ImageButton
+                style="@style/ButtonToolbar"
+                android:id="@+id/profile_btn"
+                android:src="@drawable/account"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

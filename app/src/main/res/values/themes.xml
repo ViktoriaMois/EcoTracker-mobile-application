@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EcoTracker" parent="Theme.Material3.DayNight.NoActionBar">
+            <item name="colorPrimary">@color/light_grey</item>
+            <item name="colorOnPrimary">@color/text_grey</item>
+            <item name="colorOnError">@color/text_pink</item>
+            <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
+            <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
+            <item name="android:windowTranslucentStatus">true</item>
+            <item name="android:alertDialogTheme">@style/AlertDialogCustom</item>
+    </style>
+
+    <style name="Theme.EcoTracker" parent="Base.Theme.EcoTracker" />
+</resources>

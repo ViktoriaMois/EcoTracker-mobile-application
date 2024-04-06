@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout"
+    android:gravity="center"
+    android:background="@drawable/basic_background">
+
+    <TextView
+        style="@style/CustomHeadline"
+        android:id="@+id/textView"
+        android:text="@string/support2"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/toolbar"
+        android:gravity="center">
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/textView1"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/if_you_have_some_questions_you_can_call_us_or_send_an_e_mail"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            style="@style/CustomText"
+            android:id="@+id/textView2"
+            android:gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textView1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@string/the_hotline_7_xxx_xxx_xx_xx"
+            android:textColor="@color/text_grey"/>
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/textView4"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textView2"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="@string/the_e_mail_support_ecotracker_com"
+            android:textColor="@color/text_grey"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="340dp"
+            android:textSize="18sp"
+            android:layout_below="@id/textView4"
+            android:textColor="@color/text_grey"
+            android:gravity="center"
+            android:text="@string/instruction_in_the_title_of_your_e_mail_use_the_word_error_in_the_body_describe_the_problem_and_add_screenshots_please" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_light_grey"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/main_btn"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/calendar"
+                android:backgroundTint="@color/transparent_turquoise"
+                android:src="@drawable/calendar_month_outline"/>
+
+            <ImageButton
+                style="@style/ButtonToolbar"
+                android:id="@+id/profile_btn"
+                android:src="@drawable/account"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Fractions">
+        <item>PET/01</item>
+        <item>HDPE/02</item>
+        <item>LDPE/04</item>
+        <item>PP/05</item>
+        <item>PS/06</item>
+        <item>OTHER/7</item>
+        <item>PAP/21–23</item>
+        <item>GL/70–74</item>
+        <item>FE/40</item>
+        <item>ALU/41</item>
+    </string-array>
+</resources>

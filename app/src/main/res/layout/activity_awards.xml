@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/basic_background">
+
+    <TextView
+        style="@style/CustomHeadline"
+        android:id="@+id/textView4"
+        android:text="@string/awards"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/toolbar"
+        android:gravity="center">
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/textView"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="@string/default_title"
+            android:textSize="20sp"
+            android:textStyle="italic"/>
+
+        <TextView
+            style="@style/CustomText"
+            android:id="@+id/textView2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/textView"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:text="@string/default_text"
+            android:textColor="@color/text_grey"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:background="@color/transparent_turquoise"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:gravity="center"
+            android:text="@string/promo_10"/>
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_light_grey"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/main_btn"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/calendar"
+                android:backgroundTint="@color/transparent_turquoise"
+                android:src="@drawable/calendar_month_outline"/>
+
+            <ImageButton
+                style="@style/ButtonToolbar"
+                android:id="@+id/profile_btn"
+                android:src="@drawable/account"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</RelativeLayout>

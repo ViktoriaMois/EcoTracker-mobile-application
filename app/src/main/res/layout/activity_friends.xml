@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relativeLayout"
+    android:gravity="center"
+    android:background="@drawable/basic_background">
+
+    <TextView
+        style="@style/CustomHeadline"
+        android:id="@+id/textView"
+        android:text="@string/friends"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_above="@id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/friends"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/list_friends"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            style="@style/CustomHeadline"
+            android:textSize="17sp"
+            android:id="@+id/textView2"
+            android:layout_below="@id/friends"
+            android:text="@string/other_users"/>
+
+        <LinearLayout
+            android:id="@+id/other_users"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ListView
+                android:id="@+id/list_other_users"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/transparent_light_grey"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/main_btn"
+                android:src="@drawable/home"/>
+
+            <ImageButton
+                android:layout_marginEnd="70dp"
+                style="@style/ButtonToolbar"
+                android:id="@+id/calendar"
+                android:backgroundTint="@color/transparent_turquoise"
+                android:src="@drawable/calendar_month_outline"/>
+
+            <ImageButton
+                style="@style/ButtonToolbar"
+                android:id="@+id/profile_btn"
+                android:src="@drawable/account"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
